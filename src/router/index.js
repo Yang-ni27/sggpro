@@ -1,16 +1,21 @@
 import Vue from 'vue'
 import  VueRouter from 'vue-router'
-import Home from '../views/Home'
+import Index from '../views/Index'
 import Search from '../views/Search'
 import Order from '../views/Order'
 import Profile from '../views/Profile'
+import myFoot from '../components/myFoot'
 
 Vue.use(VueRouter)
 
 const routes=[
   {
-    path:'/home',
-    component:Home
+    path:'/foot',
+    component:myFoot
+  },
+  {
+    path:'/index',
+    component:Index
   },
   {
     path:'/search',
@@ -26,7 +31,7 @@ const routes=[
   },
   {
     path:'/',
-    redirect:'/home'
+    redirect:'/index'
   },
 ]
 const router = new VueRouter({

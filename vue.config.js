@@ -1,6 +1,6 @@
 const px2rem=require('postcss-px2rem')
 const postcss=px2rem({
-  remUnit:75
+  remUnit:37.5
 })
 
 module.exports={
